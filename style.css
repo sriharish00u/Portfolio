@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #22223b;
+    /* Changed background color */
+}
+
+header {
+    text-align: center;
+    background-color: chocolate;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    color: aqua;
+    font-family: monospace;
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+button {
+    background-color: rgb(235, 89, 230);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#home {
+    border: 4px solid orange;
+    background: #ffe5b4;
+}
+
+#skills {
+    border: 4px solid #00b4d8;
+    background: #caf0f8;
+}
+
+#projects {
+    border: 4px solid #43aa8b;
+    background: #e9f5db;
+}
+
+#achievements {
+    border: 4px solid #f3722c;
+    background: #fff3e2;
+}
+
+#hobbies {
+    border: 4px solid #7209b7;
+    background: #f3e8ff;
+}
+
+/* Skills section styling */
+#skills {
+    text-align: center;
+    margin: 20px;
+}
+
+#skills img {
+    margin: 0.5rem;
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+#skills img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal styling */
+#imgModal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#imgModal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    animation: zoomIn 0.3s ease;
+}
+
+#closeModal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#closeModal:hover {
+    color: red;
+}
+
+/* Zoom animation */
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+footer {
+    text-align: center;
+    background-color: chocolate;
+    font-family: monospace;
+    color: aqua;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal styles */
+#imgModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+#imgModal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border: 8px solid white;
+    border-radius: 10px;
+}
+#modalImg {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+form {
+    border: 4px solid orange;
+    background: #ffe5b4;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact {
+    border: 4px solid orange;
+    background: #ffe5b4;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+}
